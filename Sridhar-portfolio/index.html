@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sridhar - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var splashScreen = document.getElementById('splash-screen');
+            window.addEventListener('scroll', function() {
+                if (!document.body.classList.contains('splash-visible')) {
+                    document.body.classList.add('splash-visible');
+                    // Remove the splash screen after a short delay
+                    setTimeout(function() {
+                        splashScreen.style.display = 'none';
+                    }, 500);
+                }
+            });
+        });
+    </script>
+
+
+<header>
+    <h1>Sridhar Perumal</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my website! I'm passionate about Cyber Security and i am a Certified Ethical Hacker by EC-Council.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam tortor nec ligula luctus, sit amet efficitur leo scelerisque. Nullam nec velit nec odio lacinia posuere.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-card">
+            <h3>Vulnerability Assessment and Penetration Testing</h3>
+            <p>During my pursuit of the CEH-Practical certification, I undertook a comprehensive project focused on Vulnerability Assessment and Penetration Testing. Under the guidance of my mentor, I was tasked with assessing the security posture of five vulnerable systems and obtaining root access to demonstrate potential exploits and vulnerabilities.
+
+                Utilizing remote access methodologies, I meticulously conducted a thorough examination of each system, identifying and exploiting vulnerabilities across various layers of the network and system infrastructure. Through diligent analysis and testing, I successfully gained root access to all five systems, showcasing a deep understanding of security vulnerabilities and penetration techniques.
+                
+                Upon completion of the project, I compiled a comprehensive report detailing the vulnerabilities discovered, exploitation methods employed, and recommendations for remediation. This project not only demonstrated my technical proficiency in ethical hacking and security assessment but also showcased my ability to effectively communicate findings and recommendations to stakeholders..</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Web Application Penetration Testing</h3>
+
+            <p>As part of my commitment to ethical cybersecurity practices, I conducted a thorough security assessment of a college website. During the assessment, I uncovered a critical SQL injection vulnerability, which posed a significant risk to the confidentiality and integrity of sensitive data stored on the website's database.
+
+                Through meticulous testing and analysis, I successfully exploited the vulnerability, gaining unauthorized access to student records, staff information, and legal documents. Recognizing the severity of the situation, I promptly reported my findings to the college management, providing detailed evidence of the vulnerability and its potential impact.
+                
+                Upon receiving my report, the college management took immediate action to remediate the vulnerability and strengthen the website's security posture. My responsible disclosure of the vulnerability not only prevented potential data breaches but also earned appreciation from the college management for my ethical conduct and dedication to cybersecurity best practices.
+                
+                This project underscores the importance of proactive security assessments and responsible disclosure in safeguarding sensitive information and mitigating cybersecurity risks.</p>
+
+            <a href="#">View Project</a>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to get in touch with me via email or connect with me on social media:</p>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/sridhar-/">Sridhar</a></li>
+            <li>Twitter: <a href="https://twitter.com/Sridhar__07">@Sridhar__07</a></li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Sridhar Perumal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
